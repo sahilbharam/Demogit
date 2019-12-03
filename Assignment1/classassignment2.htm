@@ -1,0 +1,98 @@
+<html>
+	<body>
+		<script>
+		/*function odd()
+		{
+			var sum=0;
+			var a=parseInt(prompt("Enter 1st Number"));
+			var b=parseInt(prompt("Enter 2nd Number"));
+			for(var i=a;i<b;i++)
+			{
+				if(i%2===1)
+				{
+					sum=sum+i;
+				}
+			}
+			document.write("Numbers are "+ sum );
+		}
+		odd();
+		
+		function prime()
+		{
+			
+			var a=parseInt(prompt("Enter 1st Number"));
+			var b=parseInt(prompt("Enter 2nd Number"));
+			for(var i=a;i<b;i++)
+			{
+				var flag=0;
+				for(var j=1;j<b;j++)
+				{
+					if(i%j===0)
+					{
+						flag++;
+					}
+				}
+				if(flag===2)
+				{
+					document.write("Numbers are "+ i +"<br>" );
+				}
+			}
+			
+		}
+		prime();
+		
+		function temp()
+		{
+			var p;
+			var q;
+			var a=prompt("Enter the unit");
+			var b=parseInt(prompt("Enter temperature"));
+			
+			if(a=="celcius")
+			{		
+					p=(5/9*b)+32;
+					document.write("temperature is "+ p );
+			}	
+			else if(a=="Farhenite")
+			{
+					q=(5/9*(b-32));
+					document.write("temperature is "+ q );
+			}
+		}
+		temp();
+		
+		
+	    function fact()
+		{
+		    var i,fact=1;
+		    var num=parseInt(prompt("Enter the number"));
+			document.write("factorial is");
+		    for(i=1;i<=num;i++)
+			{
+			   fact=fact*i;
+			}
+			 document.write(fact);
+		}
+		fact();
+		*/
+		
+		function cntvowel()
+		{
+		  var v1=promt("Enter the string");
+		  var i;
+		  var cnt=0
+		for(i=0;i<v1.length;i++)
+		  {
+		    if(v1[i]=='a'||v1[i]=='e'|| v1[i]=='i'|| v1[i]=='o'|| v1[i]=='u')
+			{
+			  cnt++;
+			}
+			
+		  }
+		  document.write(cnt);
+		
+		}
+		cntvowel();
+		</script>
+	</body>
+</html>

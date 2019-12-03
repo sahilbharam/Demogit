@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<style>
+div{
+	background-color:red;
+	height:100px;
+	width:100px;
+	position:absolute;
+}
+</style>
+<script>
+$(document).ready(function(){
+//$("p").hide();
+
+$("#btn2").click(function(){
+$("p").css("color","white")
+//$("p").append(" Good Evening !!")
+//$("p").prepend(" Good Evening !!")
+//$("p").after(" Good Evening !!")
+$("p").empty()
+})
+
+$("#btn1").click(function(){
+$("#divanimate").animate({
+height:'200px',
+width:'200px',
+opacity:'0.5'
+})
+$("#divanimate").css({"background-color":"blue","font-size":"200%","color":"red"});
+$("p").show();
+alert($("p").text());
+alert($("p").html());
+
+$("p").text("<b>Jquery World</b>");
+$("p").html("<b>Jquery World</b>");
+})
+
+
+})
+
+</script>
+</head>
+<body>
+<button type="button" id="btn1"> Move the Box </button>
+<button type="button" id="btn2"> Add text </button>
+<br/>
+<br/>
+<div id="divanimate"><p>Hi</p></div>
+
+
+</body>
+</html>

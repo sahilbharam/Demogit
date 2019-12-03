@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="nav.css">
+
+<div class="container-fluid alert bg-dark sticky-top">
+
+	<a class="menulink" href="home.html"> Home</a>
+	<a class="menulink" href="product1.htm"> Product</a>
+	<a class="menulink" href="registration.html"> SignUp</a>
+	<a class="menulink" href="feedback.html"> Feedback</a>
+</div>
+
+<script>
+
+function submit()
+{
+alert("Form should be filled");	
+}
+
+function un()
+{
+var name=document.getElementById("username").value;
+
+if(name.length<6)
+{
+alert("user should be greatr than 6 char");
+return false;
+}
+else
+return true;
+}
+
+function number(){  
+var num=document.myform.phone.value;  
+if (isNaN(num)){  
+  document.getElementById("no").innerHTML="Enter Numeric value only";  
+  return false;  
+}else{  
+  return true;  
+  }  
+}  
+
+function password()
+{
+	errmsg="";
+    var pw=document.getElementById("password").value;
+	var re=document.getElementById("confirm").value;
+
+    if (pw===re) 
+	{
+		
+		errmsg = "Password entered is correct";
+		document.getElementById("errp").innerHTML = errmsg;
+		return false;
+		
+    
+		}
+	else{
+	
+		errmsg = "Password entered is  not correct";
+	document.getElementById("errp").innerHTML = errmsg;
+		return true;
+		
+	}
+}
+
+function email1()
+{
+var name=document.getElementById("txtemail").value;
+var filter=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(!filter.test(name))
+{
+alert("Enter valid email id");
+return false;
+}
+else
+return true;
+}
+
+
+
+	
+</script>
+
+</head>
+<body>
+
+
+<form  action="values.php" method="get">
+<br><br><br>
+<table width="40%" height="50%" border="1" align="center" bgcolor="silver">
+<tr>
+<td colspan=2 align="center"><font size="6px">Registration</font></td>
+</tr>
+<tr>
+		<td>
+			Username
+		</td>
+		<td>
+			<input type="text" name="username" id="username"  placeholder="Enter Username" onblur="un()" >
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Password</td> 
+		<td>	
+			<input type="password" name="password" placeholder="Enter Password" id="password" onblur="password()" required>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Confirm Password</td> 
+		<td>	
+			<input type="password" name="password" placeholder="Re Enter Password" id="confirm" onblur="password()" required>
+		</td>
+	</tr>
+<tr>
+		<td>
+			Email</td> 
+			<td>
+			<input type="text" name="txtemail" placeholder="Enter Email id" id="txtemail" onblur="email1()" required>
+			<div id="errp"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Phone</td> 
+			<td>
+			<input type="text" name="phone" id="no" placeholder="Enter Phone" onblur= "number()" required>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Address</td>
+		<td>
+			<textarea rows="3" cols="30" name="textarea"></textarea required>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Country</td>
+		<td>
+			<select name="Country">
+  <option value="India">India</option>
+  <option value="Canada">Canada</option>
+  <option value="China">China</option>
+  <option value="America">America</option>
+  <option value="Australia">Australia</option>
+  <option value="London">London</option>
+  <option value="Dubai">Dubai</option>
+	</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Prefered Language</td>
+		<td>
+			English <input type="checkbox" name="checkbox[]" value="English"/>
+		&emsp;
+			Hindi <input type="checkbox" name="checkbox[]" value="Hindi"/>
+		&emsp;
+			Spanish <input type="checkbox" name="checkbox[]" value="Spanish"/>
+		&emsp;
+			German <input type="checkbox" name="checkbox[]"value="German"/>
+		&emsp;
+			French <input type="checkbox" name="checkbox[]"value="French"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Date of Birth</td> 
+			<td>
+			<input type="date" name="dob" >
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+			Gender
+			</td> 
+			<td>
+			Male <input type="radio" name="radio"> &nbsp;&nbsp;
+			Female <input type="radio" name="radio"> &nbsp;&nbsp;
+			Other<input type="radio" name="radio"> &nbsp;&nbsp;
+		</td>
+	</tr>
+	<tr>
+	<td colspan=2>
+	&emsp;<input type="submit" name="Submit"  id="s"> &emsp; <input type="reset" name="reset">
+	</td>
+	
+</table>
+</form>
+</body>
+</html>

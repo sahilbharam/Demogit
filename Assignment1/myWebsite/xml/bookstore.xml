@@ -1,0 +1,40 @@
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (book)>
+<!ELEMENT book (title,(author|publisher),year,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST book lang CDATA "en|hn|jp|fr">
+<!ATTLIST book category CDATA #IMPLIED>
+<!ATTLIST price currency CDATA #FIXED "$">
+<!ENTITY publisher "TATA MACGRAW HILLS Publication house">
+]>
+
+<bookstore>
+	<book lang="en" category="Suspense">
+		<title> Angles and Demons  </title>
+		<publisher>&publisher;</publisher>
+		<price currency="$"> 120 </price>
+		<year> 2005 </year>
+	</book>
+	<book lang="en" category="Action">
+		<title> Harry Potter  </title>
+		<author> J.K.Rowling </author>
+		<price> 100 </price>
+		<year> 2001 </year>
+	</book>
+	<book lang="hn" cateogry="cooking">
+		<title > Superquick Breakfast  </title>
+		<author> Sanjeev Kapoor </author>
+		<price> 150 </price>
+		<year> 2010 </year>
+	</book>
+	<book lang="jp" category="Thriller">
+		<title> Digital Fortress  </title>
+		<author> Dan Brown </author>
+		<price> 125 </price>
+		<year> 2003 </year>
+	</book>
+</bookstore>

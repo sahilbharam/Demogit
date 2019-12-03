@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<Script>
+function addtocart()
+{
+var items=document.getElementsByName('chk');
+
+				var selectedItems="";
+				var quantity = document.getElementsByName("qty");
+				var price = document.getElementsByName("price");
+				for(var i=0; i<items.length; i++){
+					if(items[i].checked==true)
+					{
+						selectedItems+=items[i].value+"\n";
+						alert(quantity[i].value);
+						alert(price[i].value);
+						}
+				}
+				
+				//var quantity = document.getElementsByName(str).value;
+				
+				/*for(var i=0; i<quantity.length; i++)
+				{
+				
+				}*/
+}
+</script>
+
+</head>
+<body>
+	<div class="container"> 
+	<div class = "row">
+	<div class="col-sm-4"> 
+	<input type="checkbox" id="chk" name="chk" value="1"/>
+	<br/>
+	Quantity: <input type="number" name="qty"  id="qty1" min="0" max="10"/>
+	<br/>
+	Price : <output name="price" id="price1" > 1000 </output>
+	</div> 
+	<div class="col-sm-4"> 
+	<input type="checkbox" id="chk" name="chk" value="2"/>
+	<br/>
+	Quantity:<input type="number" name="qty" min="0" max="10"/>
+	<br/>
+	Price : <output name="price" id="price1" > 2000 </output>
+	</div>
+	<div class="col-sm-4">
+	<input type="checkbox" id="chk" name="chk" value="3"/>
+	<br/>
+	Quantity:<input type="number" name="qty" min="0" max="10"/>
+	<br/>
+	Price : <output name="price" id="price1" > 3000 </output>
+	</div>
+	</div>
+	</div>
+	<div style="text-align:center;margin:10px;width:100%">
+		<button type="button" onclick="addtocart()"> Add to Cart </button>
+	</div>
+</body>
+</html>

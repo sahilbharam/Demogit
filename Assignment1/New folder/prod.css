@@ -1,0 +1,37 @@
+a.menulink
+	{
+color:white;
+text-decoration:none;
+
+  
+ 
+  display: inline;
+	
+  text-align: center;
+  padding: 14px 50px;
+  font-size:25px;
+
+}
+body
+{
+	background-image:url("bg1.jpg");
+	background-repeat:no-repeat;
+	background-color:#cccccc;
+	background-size:cover;
+}
+
+
+
+a:hover
+{
+	font-size:35px;
+	background-color: red;
+}
+
+img
+{
+	width:250px;
+	height:200px;
+}
+
+</style>

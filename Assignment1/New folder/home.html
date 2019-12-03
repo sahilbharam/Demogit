@@ -1,0 +1,122 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="nav.css">
+
+<style>
+
+div.absolute{
+	position:absolute;
+	right:80px;
+	top:510px;
+	background-color:cyan;
+	height:150px;
+	width:300px;
+	
+	
+}
+
+div.relative{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+label{
+	padding:6px;
+}
+</style>
+
+<div class="container-fluid alert bg-dark sticky-top" >
+
+	<a class="menulink" href="home.html"> Home</a>
+	<a class="menulink" href="product1.htm" > Product</a>
+	<a class="menulink" href="login.php"> SignUp</a>
+	<a class="menulink" href="feedback.html"> Feedback</a>
+</div>
+
+
+</head>
+<body background="bg1.jpg" width="100%" height="100%">
+<form action="login.php">
+
+<?php
+$errmessage ="";
+if(isset($_REQUEST["flag"]))
+{
+	$errmessage =  "Username or Password incorrect";
+}
+else
+{
+	$errmessage ="";
+}
+	
+?>
+<div class="relative">
+<div class="absolute">
+<br>
+<label for="Username"><font color="red"><b>Username</b></font></label>
+
+<input type="text" placeholder="Username" name="Username" autofocus required><br>
+<label for="Password"><font color="red"><b>Password</b></font></label>
+
+&nbsp;<input type="password" placeholder="Password" name="Password" required><br>
+&emsp;&nbsp;<button type="submit" "alert-success">Login</button>&nbsp;
+<div> <?php echo $errmessage ?> </div>
+<button type="submit" "alert-success">New User</button>
+</div>
+
+</div>
+
+<footer class="page-footer font-medium white pt-4 bg-dark position=fixed width=100%">
+
+	
+	<div class="container-fluid text-center text-md-left">
+  
+	  
+	  <div class="row">
+  
+		
+		<div class="col-md-6 mt-md-0 mt-3">
+  
+		 
+		  <h5 class="text-primary" >OUR SERVICES</h5>
+		  <p class="text-danger">Here you can get best cameras in reasonable rates.</p>
+  
+		</div>
+		
+  
+		<hr class="clearfix w-100 d-md-none pb-3">
+  
+		
+		<div class="col-md-3 mb-md-0 mb-3">
+  
+		
+		  <h5 class="text-primary">OUR LINKS</h5>
+  
+		  <ul class="list-unstyled">
+			<li>
+			  <a href="home.html" class="text-primary">Home</a>
+			</li>
+			<li>
+			  <a href="product.html" class="text-primary">Product</a>
+			</li>
+			<li>
+			  <a href="registration.html" class="text-primary">Registration</a>
+			</li>
+			<li>
+			  <a href="feedback.html" class="text-primary">Feedback</a>
+			</li>
+		  </ul>
+  </div>
+		</div>
+	</div>
+		<div class="footer-copyright text-center py-3 text-danger">© 2019 Copyright:
+			<a href="home.html" class="text-danger">ABHI</a>
+		  </div>
+		</footer>
+</form>
+</form>
+</body>
+</html>

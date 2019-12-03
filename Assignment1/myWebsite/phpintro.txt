@@ -1,0 +1,6 @@
+Introduction to PHP
+PHP is one of the most widely used server side scripting language for web development. Popular websites like Facebook, Yahoo, Wikipedia etc, and our very own Studytonight, are developed using PHP.
+
+PHP is so popular because it's very simple to learn, code and deploy on server, hence it has been the first choice for beginners since decades.
+
+In this tutorial series we will be covering all the important concepts of Php language from basics to advanced and will also share some ready-to-use, useful code sinppets for beginners to kickstart their web development project.

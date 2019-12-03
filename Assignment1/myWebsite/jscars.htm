@@ -1,0 +1,39 @@
+<html>
+<body>
+<div>
+<input type="text" id="carbrand"/>
+<button type="button" onclick="addcar()"> Add car in Store </button> 
+<button type="button" onclick="removecar()">  Remove Car </button>
+<h3> Cars in Store </h3>
+
+<ul type="none" id="cars">
+<script> //document.write(localStorage.getItem("carslist")) </script>
+</ul>
+<button type="button" onclick="removecar()">  Remove Car </button>
+<script>
+
+function addcar()
+{
+	
+	var car = document.getElementById("carbrand").value; //BMW
+	var carlist = document.createElement("li"); //<li> </li>
+	carlist.setAttribute("id",car);
+	var carnode = document.createTextNode(car); //BMW
+	carlist.appendChild(carnode); 
+	document.getElementById("cars").appendChild(carlist);
+	//localStorage.setItem("carslist",car);
+	
+}
+
+function removecar()
+{
+	var car = document.getElementById("carbrand").value; //BMW
+	var carlist = document.getElementById(car)
+	//carlist.parentNode.removeChild(carlist);
+	document.getElementById("cars").removeChild(carlist);
+}
+
+</script>
+
+</body>
+</html>

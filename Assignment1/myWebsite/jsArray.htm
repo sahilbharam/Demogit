@@ -1,0 +1,53 @@
+<script>
+
+//var str = "Pankaj,Shailaja,Prakash,Nitin";
+
+
+var cars = ["BMW","VOLVO","MERCEDEZ","AUDI"];
+var sel_car = cars.slice(2,4);
+
+
+
+document.write("Sel_car_count " + sel_car[1] + "<br/>");
+
+//document.write(cars[1]);
+
+/*for(let i = 0; i<cars.length;i++)
+{
+	document.write(cars[i] + "<br/>");
+}*/
+
+cars.push("TOYOTA");
+cars.splice(2,0,"Maruti","Suzuki");
+
+
+
+
+//cars.sort();
+//cars.reverse();
+for (car in cars)
+{
+	document.write(cars[car] + "<br/>");
+}
+//cars.pop();
+//cars.pop();
+cars.shift();
+</script>
+
+<hr color="red">
+
+
+<script>
+for (car in cars)
+{
+	document.write(cars[car] + "<br/>");
+}
+
+</script>
+
+
+
+
+
+
+

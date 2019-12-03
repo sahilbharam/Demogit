@@ -1,0 +1,1 @@
+Introduction to PHP PHP is one of the most widely used server side scripting language for web development. Popular websites like Facebook, Yahoo,

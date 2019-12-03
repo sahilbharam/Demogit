@@ -1,0 +1,199 @@
+<html>
+<head> <title> Khana Katta </title> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+</head>
+
+<body> 
+
+<div class="row">
+<div class="col-sm-5 bg-danger"> 1 </div>
+<div class="col-sm-4 bg-info"> 2 </div>
+<div class="col-sm-2 bg-success"> 3 </div>
+<div class="col-sm-8 bg-success"> 3 </div>
+</div>
+
+
+<!--<h1 class="text-muted bg-success"> Bootstrap Page </h1>
+<h1 class="text-primary bg-danger" > Bootstrap Page </h1>
+<h1 class="text-danger bg-info"> Bootstrap Page </h1>
+<h1 class="text-info bg-warning"> Bootstrap Page </h1>
+<h1 class="text-success bg-dark"> Bootstrap Page </h1>
+<h1 class="text-warning bg-primary"> Bootstrap Page </h1>
+<h1 class="text-body bg-info"> Bootstrap Page </h1>-->
+<table class="table-striped table-hover table-primary" 
+bgcolor="lavender" width="40%"
+align="center"
+border=1
+>
+<tr>
+<th colspan="2"> User Signup </th>
+</tr>
+</tr>
+<tr>
+<td>
+Username 
+</td>
+<td>
+<input type="text" name="txtname" 
+maxlength="10" autofocus required 
+placeholder = "Enter Username"
+/>
+<!--value="Parag" autocomplete readonly-->
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+<input type="password" name="txtpass" 
+ autofocus 
+placeholder = "Enter Password"
+/>
+</td>
+</tr>
+<tr>
+<td>
+Retype Password
+</td>
+<td>
+<input type="password" name="txtrpass" 
+ autofocus 
+placeholder = "Re-Enter Password"
+/>
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+<input type="email" name="email" 
+ autofocus 
+placeholder = "Enter Email" required
+/>
+</td>
+</tr>
+<tr>
+<td>
+Mobile
+</td>
+<td>
+<input type="number" name="mobile" 
+ autofocus 
+placeholder = "Enter Mobile" 
+/>
+</td>
+</tr>
+<tr>
+<td>
+Address
+</td>
+<td>
+<textarea name="txaaddr" 
+rows="2" cols="20"
+placeholder="Enter Address"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+Date of Birth
+</td>
+<td>
+<input type="Date" name="dob" 
+ autofocus />
+</td>
+</tr>
+<tr>
+<td>
+Gender
+</td>
+<td nowrap>
+<input type="radio" name="rdogender"  /> Male
+<input type="radio" name="rdogender" checked /> Female
+<input type="radio" name="rdogender" /> Transgender
+</td>
+</tr>
+<tr>
+<td>
+Education
+</td>
+<td nowrap>
+<input type="checkbox" name="chkedu[]"  /> Graduate
+<input type="checkbox" name="chkedu[]"  /> MBA
+<input type="checkbox" name="chkedu[]" /> MCA
+<input type="checkbox" name="chkedu[]" /> PHD
+</td>
+</tr>
+<tr>
+<td> Country </td>
+<td> 
+<select name="selcountry">
+<option> India </option>
+<option selected> Sweden </option>
+<option> Japan </option>
+<option> South Korea </option>
+<option> United Kingdom </option>
+<option> United State of America </option>
+</select>
+</td>
+</tr>
+<tr>
+<td> Hobbies </td>
+<td> 
+<select name="selhobbies[]" multiple>
+<option> Singing </option>
+<option selected> Travelling </option>
+<option> Watching Movies </option>
+<option> Trekking </option>
+<option> Reading </option>
+<option> Chatting </option>
+</select>
+</td>
+</tr>
+<tr>
+<td> Experience </td>
+<td> 
+0(Yrs)<input type="range" 
+min = "0"
+max="20"
+name="experience"/>20(Yrs)
+</td>
+</tr>
+<tr>
+<td nowrap> Upload Profile Photo </td>
+<td> 
+<input type="file" name="profile"/>
+
+</td>
+</tr>
+<tr>
+<td> My Favouraite Song </td>
+<td> 
+<audio controls autoplay loop> 
+<source src="resources/samplemusic.mp3"/>
+</audio> 
+</td>
+</tr>
+<tr>
+<td nowrap> My Favouraite Video </td>
+<td> 
+<video controls autoplay loop> 
+<source src="resources/samplevideo.mp4"/>
+</video> 
+</td>
+</tr>
+<tr> 
+<td align="right"> 
+<input type="submit" value="Register"/>
+</td>
+<td> <button type="reset">Clear</button>
+</td>
+</tr>
+</table>
+</body>
+</html>
